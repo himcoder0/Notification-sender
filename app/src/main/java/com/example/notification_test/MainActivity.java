@@ -33,21 +33,6 @@ public class MainActivity extends AppCompatActivity {
         if(FirebaseAuth.getInstance().getCurrentUser()!=null){
             startActivity(new Intent(this, SendNotif.class));
         }else{
-//            LoginB.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    FirebaseAuth.getInstance().signInWithEmailAndPassword(EmailTB.getText().toString().trim(),
-//                            PassTB.getText().toString().trim()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-//                        @Override
-//                        public void onSuccess(AuthResult authResult) {
-//                            if(task!=null)
-////                            Toast.makeText(MainActivity.this,"logged in", Toast.LENGTH_SHORT).show();
-//                            startActivity(new Intent(MainActivity.this,
-//                                    SendNotif.class));
-//                        }
-//                    });
-//                }
-//            });
             LoginB.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
